@@ -1,0 +1,460 @@
+body{
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: auto;
+    position: relative;
+    min-height: 1000px;
+}
+
+/*----------------------------------------------MENU DE NAVEGACION Y LOGO----------------------------------------------*/
+#div-menu-content{
+    padding: 0;
+    flex-wrap: nowrap;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+header{   
+    background-color: #556B2F;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+}
+
+#div-menu-content a img{
+    height: 150px;
+    width: 300px;
+}
+
+#btn-menu{
+    background-color: goldenrod;
+    border: solid 1px black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+}
+
+#lst-menu{    
+    background-color: goldenrod;
+    border: solid 1px black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+}
+
+#item-menu{
+    color: #556B2F;
+}
+
+#item-menu:hover{
+    background-color: #556B2F; 
+    color: goldenrod;
+}
+
+.titulo-principal{
+    font-family: 'Fasthand', cursive;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    font-size: 150px;
+    text-align: center;
+    /*text-shadow: 2px 2px 5px goldenrod;*/
+    color: #556B2F;
+    text-shadow: 1px 1px 2px black, 0 0 25px gold, 0 0 5px goldenrod;
+}
+
+/*----------------------------------------------FOOTER----------------------------------------------*/
+footer{
+    margin-top: 3%;
+    height: 100px;
+    width: 100%;
+    background-color: #556B2F;
+}
+
+footer h5{
+    display: block;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    color: goldenrod;
+}
+/*----------------------------------------------FOOTER----------------------------------------------*/
+
+/*----------------------------------------------HOME----------------------------------------------*/
+#main-principal{
+    
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#nosotros{
+    background-image: url(../img/nosotrosAlternative.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    padding: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+}
+
+#nosotros-enlace{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    height: 600px;
+    width: 100%;
+}
+
+#nosotros-enlace p{
+    display: inline;
+    top: 50%;
+    position: relative;
+}
+
+#cerv-franq{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 500px;
+    margin-top: 3%;
+    padding: 0;
+}
+
+#cervezas{
+    background-image: url(../img/cervezas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -100px;
+    width: 49%;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+}
+
+#cerveza-enlace{
+    display: block;
+    position: absolute;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+#cerveza-enlace p{
+    display: inline;
+    position: relative;
+    top: 50%;
+}
+
+#obtene-franquicia{
+    background-image: url(../img/franquicia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -100px;
+    width: 49%;
+    text-decoration: none;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+}
+
+#franquicia-enlace{
+    display: block;
+    text-decoration: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+#franquicia-enlace p{
+    display: inline;
+    position: relative;
+    top: 50%;
+}
+
+#ubicaciones{
+    background-image: url(../img/ubicaciones.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -150px;
+    margin-top: 3%;
+    height: 300px;
+    width: auto;
+    position: relative;
+    padding: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+}
+
+#ubicaciones-enlace{
+    display: block;
+    text-decoration: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    
+}
+
+#ubicaciones-enlace p{
+    display: inline;
+    position: relative;
+    top: 50%;
+}
+
+#contacto{
+    background-image: url(../img/contacto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -70px;
+    margin-top: 3%;
+    height: 300px; 
+    width: auto;
+    position: relative;
+    padding: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+}
+
+#contacto-enlace{
+    display: block;
+    text-decoration: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+#contacto-enlace p{    
+    display: inline;
+    position: relative;
+    top: 50%;
+    text-align: center;
+}
+
+
+/*----------------------------------------------HOME----------------------------------------------*/
+
+/*--------------------------------------------------
+    'NOSOTROS' Y 'OBTENE FRANQUICIA' COMPARTEN ESTILOS
+--------------------------------------------------*/
+.main-content{
+    width: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    background-color: #556B2F;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+}
+
+.main-content h1{
+    color: goldenrod;
+}
+
+.main-content div{
+    padding: 0;    
+}
+
+.main-content div p{
+    color: goldenrod;
+}
+
+#iframe-info{
+    margin-top: 2%;
+    height: 400px;
+}
+
+#iframe-info iframe{
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+}
+/*---------------------------------------------------------------------------
+    'NOSOTROS' Y 'OBTENE FRANQUICIA' COMPARTEN ESTILOS
+-----------------------------------------------------------------------------*/
+
+/*--------------------------------------------NUESTRAS CERVEZAS----------------------------------------------*/
+#main-nuestras-cervezas{
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    position: relative;
+}
+
+#contenedor-galeria{
+    display: flex;
+    max-width: 900px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 2%;
+}
+
+.card{
+    margin-left: 1%;
+    margin-top: 1%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+}
+
+.card-body{
+    background-color: #556B2F;
+}
+
+.card-body h5{
+    color: goldenrod;
+}
+
+.card-text{
+    color: goldenrod;
+}
+
+#informacion{
+    position: fixed;
+    right: 3%;
+    width: 300px;
+    height: 200px;
+    border: solid 2px goldenrod;
+    background-color: #556B2F;
+    color: goldenrod;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+}
+/*--------------------------------------------NUESTRAS CERVEZAS----------------------------------------------*/
+
+/*--------------------------------------------UBICACIONES----------------------------------------------*/
+
+#lista-ubicaciones{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*justify-content: space-around;*/
+    width: auto;
+    min-height: 700px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.map-content{
+    height: 0%;
+    padding: 10px;
+    margin-left: 2%;
+    background-color: #556B2F;
+    border: solid 3px goldenrod;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+}
+
+.description-map{
+    color: goldenrod;
+}
+/*--------------------------------------------UBICACIONES----------------------------------------------*/
+
+/*--------------------------------------------CONTACTO----------------------------------------------*/
+#div-contacto{
+    margin-top: 4%;
+    min-height: 800px;
+}
+
+#formulario{
+    background-color: #556B2F;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#floatingTextarea{
+    min-height: 100px;
+}
+
+#btn-enviar-form{
+    background-color: goldenrod;
+}
+
+#chek-lbl{
+color: goldenrod;
+}
+
+/*--------------------------------------------CONTACTO----------------------------------------------*/
+
+/*----------------------------------------------RESPONSIVE----------------------------------------------*/
+@media(max-width: 500px){
+    #nosotros{
+        height: 300px;
+    }
+
+    #cerv-franq{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    #cervezas{
+        width: 100%;
+        height: 300px;
+        background-size: 600px 300px;
+    }
+
+    #obtene-franquicia{
+        width: 100%;
+        height: 300px;
+        margin-top: 3%;
+        background-size: 600px 300px;
+    }
+
+    #ubicaciones{
+        background-position-y: 0px;
+        background-position-x: -60px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    #contacto{
+        background-position-y: 0px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #div-menu-content a img{
+        height: 100px;
+        width: 200px;
+    }
+
+    #main-nuestras-cervezas{
+        display: block;
+    }
+    
+    #informacion{
+        position: relative;
+        width: auto;
+        right: 0;
+    }
+
+    .titulo-principal{
+        font-size: 60px;
+    }
+}
+
+@media(min-width: 501px) and (max-width: 1300px){
+    #ubicaciones{
+        background-position-y: 0px;
+        background-position-x: 0px;
+    }
+
+    #contacto{
+        background-position-y: -40px;
+    }
+
+    
+    #main-nuestras-cervezas{
+        display: block;
+    }
+    
+    #informacion{
+        position: relative;
+        width: auto;
+        right: 0;
+    }
+
+
+}
