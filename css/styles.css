@@ -280,6 +280,7 @@ footer h5{
 /*--------------------------------------------NUESTRAS CERVEZAS----------------------------------------------*/
 #main-nuestras-cervezas{
     width: auto;
+    min-height: 600px;
     display: flex;
     justify-content: space-between;
     margin-top: 5%;
@@ -354,13 +355,18 @@ footer h5{
 /*--------------------------------------------CONTACTO----------------------------------------------*/
 #div-contacto{
     margin-top: 4%;
-    min-height: 800px;
+}
+
+#div-contacto h3{
+    color: #556B2F;
+    background-color: goldenrod;
 }
 
 #formulario{
     background-color: #556B2F;
     border-radius: 5px;
     padding: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
 }
 
 #floatingTextarea{
@@ -380,6 +386,10 @@ color: goldenrod;
 /*----------------------------------------------RESPONSIVE----------------------------------------------*/
 @media(max-width: 500px){
     #nosotros{
+        height: 300px;
+    }
+
+    #nosotros-enlace{
         height: 300px;
     }
 
