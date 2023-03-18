@@ -106,8 +106,6 @@ footer h5{
 }
 
 #nosotros-enlace p{
-    display: inline;
-    top: 50%;
     position: relative;
 }
 
@@ -141,9 +139,7 @@ footer h5{
 }
 
 #cerveza-enlace p{
-    display: inline;
     position: relative;
-    top: 50%;
 }
 
 #obtene-franquicia{
@@ -167,9 +163,7 @@ footer h5{
 }
 
 #franquicia-enlace p{
-    display: inline;
     position: relative;
-    top: 50%;
 }
 
 #ubicaciones{
@@ -198,9 +192,7 @@ footer h5{
 }
 
 #ubicaciones-enlace p{
-    display: inline;
     position: relative;
-    top: 50%;
 }
 
 #contacto{
@@ -228,12 +220,17 @@ footer h5{
 }
 
 #contacto-enlace p{    
-    display: inline;
     position: relative;
-    top: 50%;
     text-align: center;
 }
 
+.enlace-principal{
+    font-family: 'Fasthand', cursive;
+    font-size: 100px;
+    color: gold;
+    top: 20%;
+    position: relative;
+}
 
 /*----------------------------------------------HOME----------------------------------------------*/
 
@@ -355,6 +352,7 @@ footer h5{
 /*--------------------------------------------CONTACTO----------------------------------------------*/
 #div-contacto{
     margin-top: 4%;
+    min-height: 800px;
 }
 
 #div-contacto h3{
