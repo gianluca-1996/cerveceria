@@ -13,7 +13,6 @@ body{
 #div-menu-content{
     padding: 0;
     flex-wrap: nowrap;
-    margin-left: 2%;
     margin-right: 2%;
 }
 
@@ -24,7 +23,7 @@ header{
 
 #div-menu-content a img{
     height: 150px;
-    width: 300px;
+    width: 250px;
 }
 
 #btn-menu{
@@ -74,6 +73,25 @@ footer h5{
     bottom: 0px;
     width: 100%;
     color: goldenrod;
+}
+
+.redes{
+    display: inline;
+    position: relative;
+    left: 47%;
+    top: 20%;
+}
+
+.redes a{
+    text-decoration: none;
+}
+
+.redes-icons{
+    fill: #Daa520;
+}
+
+.redes-icons:hover{
+    fill: beige;
 }
 /*----------------------------------------------FOOTER----------------------------------------------*/
 
@@ -252,10 +270,6 @@ footer h5{
     color: goldenrod;
 }
 
-.main-content div{
-    padding: 0;    
-}
-
 .main-content div p{
     color: goldenrod;
 }
@@ -425,7 +439,7 @@ color: goldenrod;
 
     #div-menu-content a img{
         height: 100px;
-        width: 200px;
+        width: 170px;
     }
 
     #main-nuestras-cervezas{
@@ -439,7 +453,7 @@ color: goldenrod;
     }
 
     .titulo-principal{
-        font-size: 60px;
+        font-size: 100px;
     }
 
     .enlace-principal{
@@ -447,7 +461,7 @@ color: goldenrod;
     }
 }
 
-@media(min-width: 501px) and (max-width: 1300px){
+@media(min-width: 501px) and (max-width: 1000px){
     #ubicaciones{
         background-position-y: 0px;
         background-position-x: 0px;
@@ -468,5 +482,8 @@ color: goldenrod;
         right: 0;
     }
 
+    .enlace-principal{
+        font-size: 60px;
+    }
 
 }
