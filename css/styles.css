@@ -306,14 +306,33 @@ footer h5{
     margin-left: 2%;
 }
 
-.card{
-    margin-left: 1%;
-    margin-top: 1%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+.cerveza-contenedor{
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.cerveza-contenedor img{
+    width: 200px;
+    height: 400px;
+}
+
+.icon-info-cerv{
+    fill: #Daa520;
+}
+
+.info-cerveza{
+    display: inline;
+}
+
+.icon-info-cerv:hover{
+    cursor: pointer;
+    fill: beige;
 }
 
 .card-body{
     background-color: #556B2F;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
 }
 
 .card-body h5{
@@ -325,6 +344,7 @@ footer h5{
 }
 
 #informacion{
+    overflow: auto;
     position: fixed;
     right: 3%;
     width: 300px;
@@ -334,6 +354,7 @@ footer h5{
     color: goldenrod;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
 }
+
 /*--------------------------------------------NUESTRAS CERVEZAS----------------------------------------------*/
 
 /*--------------------------------------------UBICACIONES----------------------------------------------*/
@@ -466,7 +487,7 @@ color: goldenrod;
     }
 }
 
-@media(min-width: 501px) and (max-width: 1000px){
+@media(min-width: 501px) and (max-width: 1300px){
     #ubicaciones{
         background-position-y: 0px;
         background-position-x: 0px;
