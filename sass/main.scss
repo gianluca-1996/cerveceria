@@ -1,21 +1,58 @@
+/*DEFINICION DE VARIABLES*/
+$colorGold:goldenrod;
+$boxShadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+@mixin medidas($width, $height){
+    width: $width;
+    height: $height;
+}
 
+/*Contacto*/
+#flexCheckDefault{
+    &:checked{
+        background-color: $colorGold;
+        @include medidas(20px, 20px);
+    }
+}
 
+/*--------------------------------------------------
+    'NOSOTROS' Y 'OBTENE FRANQUICIA' COMPARTEN ESTILOS
+    USO DE SINTAXIS SCSS
+--------------------------------------------------*/
+.main-content{
+    width: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    background-color: #556B2F;
+    box-shadow: $boxShadow;
 
+    h1{
+        color: $colorGold;
+    }
 
+    div{
+        p{
+            color: $colorGold;
+        }
+    }
+}
 
+#iframe-info{
+    margin-top: 2%;
+    height: 400px;
 
-
-
-
-
-
-
-
-
-
-
-
-
+    iframe{
+        height: 100%;
+        width: 100%;
+        box-shadow: $boxShadow;
+    }
+}
+/*---------------------------------------------------------------------------
+    'NOSOTROS' Y 'OBTENE FRANQUICIA' COMPARTEN ESTILOS
+    USO DE SINTAXIS SCSS
+-----------------------------------------------------------------------------*/
 
 
 /*
@@ -43,24 +80,23 @@ body{
 
 header{   
     background-color: #556B2F;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+    box-shadow: $boxShadow;
 }
 
 #div-menu-content a img{
-    height: 150px;
-    width: 250px;
+    @include medidas(250px, 150px);
 }
 
 #btn-menu{
-    background-color: goldenrod;
+    background-color: $colorGold;
     border: solid 1px black;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+    box-shadow: $boxShadow;
 }
 
 #lst-menu{    
-    background-color: goldenrod;
+    background-color: $colorGold;
     border: solid 1px black;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+    box-shadow: $boxShadow;
 }
 
 #item-menu{
@@ -69,7 +105,7 @@ header{
 
 #item-menu:hover{
     background-color: #556B2F; 
-    color: goldenrod;
+    color: $colorGold;
 }
 
 .titulo-principal{
@@ -79,7 +115,7 @@ header{
     font-size: 140px;
     text-align: center;
     color: #556B2F;
-    text-shadow: 1px 1px 2px black, 0 0 25px gold, 0 0 5px goldenrod;
+    text-shadow: 1px 1px 2px black, 0 0 25px gold, 0 0 5px $colorGold;
 }
 
 /*----------------------------------------------FOOTER----------------------------------------------*/
@@ -96,7 +132,7 @@ footer h5{
     position: absolute;
     bottom: 0px;
     width: 100%;
-    color: goldenrod;
+    color: $colorGold;
 }
 
 .redes{
@@ -140,7 +176,7 @@ footer h5{
     background-size: cover;
     height: 600px;
     padding: 0;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+    box-shadow: $boxShadow;
 }
 
 #nosotros-enlace{
@@ -173,7 +209,7 @@ footer h5{
     background-position-x: -100px;
     width: 49%;
     position: relative;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+    box-shadow: $boxShadow;
 }
 
 #cerveza-enlace{
@@ -197,7 +233,7 @@ footer h5{
     width: 49%;
     text-decoration: none;
     position: relative;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+    box-shadow: $boxShadow;
 }
 
 #franquicia-enlace{
@@ -225,7 +261,7 @@ footer h5{
     padding: 0;
     margin-left: 10%;
     margin-right: 10%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+    box-shadow: $boxShadow;
 }
 
 #ubicaciones-enlace{
@@ -254,7 +290,7 @@ footer h5{
     padding: 0;
     margin-left: 10%;
     margin-right: 10%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+    box-shadow: $boxShadow;
 }
 
 #contacto-enlace{
@@ -280,42 +316,6 @@ footer h5{
 }
 
 /*----------------------------------------------HOME----------------------------------------------*/
-
-/*--------------------------------------------------
-    'NOSOTROS' Y 'OBTENE FRANQUICIA' COMPARTEN ESTILOS
---------------------------------------------------*/
-.main-content{
-    width: auto;
-    margin-left: 10%;
-    margin-right: 10%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 5%;
-    background-color: #556B2F;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
-}
-
-.main-content h1{
-    color: goldenrod;
-}
-
-.main-content div p{
-    color: goldenrod;
-}
-
-#iframe-info{
-    margin-top: 2%;
-    height: 400px;
-}
-
-#iframe-info iframe{
-    height: 100%;
-    width: 100%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
-}
-/*---------------------------------------------------------------------------
-    'NOSOTROS' Y 'OBTENE FRANQUICIA' COMPARTEN ESTILOS
------------------------------------------------------------------------------*/
 
 /*--------------------------------------------NUESTRAS CERVEZAS----------------------------------------------*/
 #main-nuestras-cervezas{
@@ -362,15 +362,15 @@ footer h5{
 
 .card-body{
     background-color: #556B2F;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+    box-shadow: $boxShadow;
 }
 
 .card-body h5{
-    color: goldenrod;
+    color: $colorGold;
 }
 
 .card-text{
-    color: goldenrod;
+    color: $colorGold;
 }
 
 #informacion{
@@ -379,10 +379,10 @@ footer h5{
     right: 3%;
     width: 300px;
     height: 200px;
-    border: solid 2px goldenrod;
+    border: solid 2px $colorGold;
     background-color: #556B2F;
-    color: goldenrod;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+    color: $colorGold;
+    box-shadow: $boxShadow;
 }
 
 /*--------------------------------------------NUESTRAS CERVEZAS----------------------------------------------*/
@@ -403,8 +403,8 @@ footer h5{
 .map-content{
     padding: 10px;
     background-color: #556B2F;
-    border: solid 3px goldenrod;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+    border: solid 3px $colorGold;
+    box-shadow: $boxShadow;
     margin-bottom: 2%;
 }
 
@@ -414,7 +414,7 @@ footer h5{
 }
 
 .description-map{
-    color: goldenrod;
+    color: $colorGold;
 }
 /*--------------------------------------------UBICACIONES----------------------------------------------*/
 
@@ -426,14 +426,14 @@ footer h5{
 
 #div-contacto h3{
     color: #556B2F;
-    background-color: goldenrod;
+    background-color: $colorGold;
 }
 
 #formulario{
     background-color: #556B2F;
     border-radius: 5px;
     padding: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+    box-shadow: $boxShadow;
 }
 
 #floatingTextarea{
@@ -441,16 +441,16 @@ footer h5{
 }
 
 #btn-enviar-form{
-    background-color: goldenrod;
+    background-color: $colorGold;
 }
 
 #chek-lbl{
-color: goldenrod;
+color: $colorGold;
 }
 
 #email-div{
     display: none;
-    fill: goldenrod;
+    fill: $colorGold;
 }
 
 /*--------------------------------------------CONTACTO----------------------------------------------*/
