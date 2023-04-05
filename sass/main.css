@@ -303,6 +303,27 @@ footer .redes a .redes-icons:hover {
   width: 200px;
   height: 400px;
 }
+#main-nuestras-cervezas .card-body {
+  background-color: #556B2F;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+#main-nuestras-cervezas .card-body .info-cerveza {
+  display: inline;
+  margin-left: 40%;
+}
+#main-nuestras-cervezas .card-body .info-cerveza .icon-info-cerv {
+  fill: #Daa520;
+}
+#main-nuestras-cervezas .card-body .info-cerveza .icon-info-cerv:hover {
+  cursor: pointer;
+  fill: beige;
+}
+#main-nuestras-cervezas .card-body h5 {
+  color: goldenrod;
+}
+#main-nuestras-cervezas .card-body .card-text {
+  color: goldenrod;
+}
 #main-nuestras-cervezas #informacion {
   overflow: auto;
   position: fixed;
@@ -313,29 +334,6 @@ footer .redes a .redes-icons:hover {
   background-color: #556B2F;
   color: goldenrod;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
-}
-
-.info-cerveza {
-  display: inline;
-  margin-left: 40%;
-}
-.info-cerveza .icon-info-cerv {
-  fill: #Daa520;
-}
-.info-cerveza .icon-info-cerv:hover {
-  cursor: pointer;
-  fill: beige;
-}
-
-.card-body {
-  background-color: #556B2F;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
-}
-.card-body h5 {
-  color: goldenrod;
-}
-.card-body .card-text {
-  color: goldenrod;
 }
 
 /*--------------------------------------------NUESTRAS CERVEZAS----------------------------------------------*/
@@ -454,7 +452,7 @@ footer .redes a .redes-icons:hover {
   #main-nuestras-cervezas {
     display: block;
   }
-  #informacion {
+  #main-nuestras-cervezas #informacion {
     position: relative;
     width: auto;
     right: 0;

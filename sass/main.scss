@@ -348,6 +348,33 @@ footer{
         }
     }
 
+    .card-body{
+        background-color: #556B2F;
+        box-shadow: $boxShadow;
+        
+        .info-cerveza{
+            display: inline;
+            margin-left: 40%;
+            
+            .icon-info-cerv{
+                fill: #Daa520;
+    
+                &:hover{
+                    cursor: pointer;
+                    fill: beige;
+                }
+            }
+        }
+
+        h5{
+            color: $colorGold;
+        }
+        
+        .card-text{
+            color: $colorGold;
+        }
+    }
+
     #informacion{
         overflow: auto;
         position: fixed;
@@ -358,34 +385,6 @@ footer{
         background-color: #556B2F;
         color: $colorGold;
         box-shadow: $boxShadow;
-    }
-}
-
-.info-cerveza{
-    display: inline;
-    margin-left: 40%;
-
-    .icon-info-cerv{
-        fill: #Daa520;
-
-        &:hover{
-            cursor: pointer;
-            fill: beige;
-        }
-    }
-}
-
-
-.card-body{
-    background-color: #556B2F;
-    box-shadow: $boxShadow;
-
-    h5{
-        color: $colorGold;
-    }
-
-    .card-text{
-        color: $colorGold;
     }
 }
 /*--------------------------------------------NUESTRAS CERVEZAS----------------------------------------------*/
@@ -539,12 +538,12 @@ footer{
     
     #main-nuestras-cervezas{
         display: block;
-    }
-    
-    #informacion{
-        position: relative;
-        width: auto;
-        right: 0;
+        
+        #informacion{
+            position: relative;
+            width: auto;
+            right: 0;
+        }
     }
 }
 
