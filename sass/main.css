@@ -463,9 +463,9 @@ footer .redes a .redes-icons:hover {
     right: 0;
   }
 }
-@media (max-width: 630px) {
-  .redes {
-    margin-left: 37%;
-    margin-right: 37%;
+@media (max-width: 1300px) {
+  footer .redes {
+    margin-left: 30%;
+    margin-right: 30%;
   }
 }/*# sourceMappingURL=main.css.map */
