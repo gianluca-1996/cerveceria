@@ -1,4 +1,14 @@
 /*DEFINICION DE VARIABLES*/
+body {
+  background-image: url(../img/fondo.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  min-height: 1000px;
+}
+
 /*Contacto*/
 #flexCheckDefault:checked {
   background-color: goldenrod;
@@ -41,21 +51,6 @@
     'NOSOTROS' Y 'OBTENE FRANQUICIA' COMPARTEN ESTILOS
     USO DE SINTAXIS SCSS
 -----------------------------------------------------------------------------*/
-/*
-A CONTINUACION APARECE EL CSS ORIGINAL DEL PROYECTO
-PARA NO REESCRIBIR EL CODIGO NUEVAMENTE
-*/
-body {
-  background-image: url(../img/fondo.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: auto;
-  position: relative;
-  min-height: 1000px;
-}
-
 /*----------------------------------------------MENU DE NAVEGACION Y LOGO----------------------------------------------*/
 #div-menu-content {
   padding: 0;
@@ -433,6 +428,9 @@ footer .redes a .redes-icons:hover {
   }
   #main-nuestras-cervezas {
     display: block;
+  }
+  #main-nuestras-cervezas #contenedor-galeria {
+    margin-left: 100px;
   }
   #main-nuestras-cervezas #informacion {
     position: relative;

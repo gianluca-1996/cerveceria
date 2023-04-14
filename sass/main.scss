@@ -6,6 +6,16 @@ $boxShadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
     height: $height;
 }
 
+body{
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    min-height: 1000px;
+}
+
 /*Contacto*/
 #flexCheckDefault{
     &:checked{
@@ -53,23 +63,6 @@ $boxShadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
     'NOSOTROS' Y 'OBTENE FRANQUICIA' COMPARTEN ESTILOS
     USO DE SINTAXIS SCSS
 -----------------------------------------------------------------------------*/
-
-
-/*
-A CONTINUACION APARECE EL CSS ORIGINAL DEL PROYECTO
-PARA NO REESCRIBIR EL CODIGO NUEVAMENTE
-*/
-
-body{
-    background-image: url(../img/fondo.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: auto;
-    position: relative;
-    min-height: 1000px;
-}
 
 /*----------------------------------------------MENU DE NAVEGACION Y LOGO----------------------------------------------*/
 #div-menu-content{
@@ -448,6 +441,7 @@ footer{
 
 /*----------------------------------------------RESPONSIVE----------------------------------------------*/
 @media(max-width: 500px){
+
     #main-principal{
         #nosotros{
             height: 300px;
@@ -508,6 +502,10 @@ footer{
 
     #main-nuestras-cervezas{
         display: block;
+        
+        #contenedor-galeria{
+            margin-left: 100px;
+        }
         
         #informacion{
             position: relative;
